@@ -26,8 +26,8 @@ JPA 를 이용하여 일정 관리 앱을 개발한다.
 |username|String|varchar(20)|작성 유저명|O|
 |title|String|varchar(255)|할일 제목|O|
 |contents|String|varchar(255)|할일 내용|O|
-|createdScheduleDate|LocalDateTime|-|작성일|O|
-|modifyScheduleDate|LocalDateTime|-|수정일|O|
+|createAt|LocalDateTime|-|작성일|O|
+|modifiedAt|LocalDateTime|-|수정일|O|
 
 - Request : 요청 body
     - 요청 body(JSON) 에 대한 JSON 코드
@@ -38,7 +38,7 @@ JPA 를 이용하여 일정 관리 앱을 개발한다.
     "title" : "첫 번째 일정 등록",
     "contents" : 스파르타코딩클럽 1주차 강의 듣기,
     "createdAt" : "2020-11-05 09:00:00",
-    "modifyAt" : "2020-11-05 09:00:00"
+    "modifiedAt" : "2020-11-05 09:00:00"
 }
 ```
 
@@ -51,8 +51,8 @@ JPA 를 이용하여 일정 관리 앱을 개발한다.
 |username|String|varchar(20)|작성 유저명|O|
 |title|String|varchar(255)|할일 제목|O|
 |contents|String|varchar(255)|할일 내용|O|
-|created_at|LocalDateTime|-|작성일|O|
-|modify_at|LocalDateTime|-|수정일O|
+|createdAt|LocalDateTime|-|작성일|O|
+|modifiedAt|LocalDateTime|-|수정일O|
 
 
 - response : 응답 body(JSON)
@@ -64,8 +64,8 @@ JPA 를 이용하여 일정 관리 앱을 개발한다.
     "username" : "hyunsu",
     "title" : "안녕하세요",
     "contents" : "저는 배가 부릅니다.",
-    "created_at" : "2024-11-04 17:14:40",
-    "modify_at" : "2024-11-04 17:14:40"
+    "createdAt" : "2024-11-04 17:14:40",
+    "modifiedAt" : "2024-11-04 17:14:40"
 }
 ```
 - 상태 코드 : 200: OK
@@ -83,7 +83,7 @@ JPA 를 이용하여 일정 관리 앱을 개발한다.
 |username|String|varchar(20)|유저명|O|
 |title|String|varchar(255)|이메일|O|
 |createdAt|LocalDateTime|-|작성일|O|
-|modifyAt|LocalDateTime|-|수정일|O|
+|modifiedAt|LocalDateTime|-|수정일|O|
 
 - Request : 요청 body
     - 요청 body(JSON) 에 대한 JSON 코드
@@ -92,8 +92,8 @@ JPA 를 이용하여 일정 관리 앱을 개발한다.
 {
     "username" : "HYUNSU",
     "email" : "abc@abc.abc",
-    "created_At" : "2020-11-05 09:00:00",
-    "modify_At" : "2020-11-05 09:00:00"
+    "createdAt" : "2020-11-05 09:00:00",
+    "modifiedAt" : "2020-11-05 09:00:00"
 }
 ```
 
@@ -106,8 +106,8 @@ JPA 를 이용하여 일정 관리 앱을 개발한다.
 |username|String|varchar(20)|작성 유저명|O|
 |title|String|varchar(255)|할일 제목|O|
 |contents|String|varchar(255)|할일 내용|O|
-|created_at|LocalDateTime|-|작성일|O|
-|modify_at|LocalDateTime|-|수정일O|
+|createdAt|LocalDateTime|-|작성일|O|
+|modifiedAt|LocalDateTime|-|수정일O|
 
 
 - response : 응답 body(JSON)
@@ -119,8 +119,8 @@ JPA 를 이용하여 일정 관리 앱을 개발한다.
     "username" : "hyunsu",
     "title" : "안녕하세요",
     "contents" : "저는 배가 부릅니다.",
-    "created_at" : "2024-11-04 17:14:40",
-    "modify_at" : "2024-11-04 17:14:40"
+    "createdAt" : "2024-11-04 17:14:40",
+    "modifiedAt" : "2024-11-04 17:14:40"
 }
 ```
 - 상태 코드 : 200: OK
