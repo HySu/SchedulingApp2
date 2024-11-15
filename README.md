@@ -25,7 +25,7 @@ JPA 를 이용하여 일정 관리 앱을 개발한다.
 |---|---|---|---|---|
 |username|String|varchar(20)|작성 유저명|O|
 |title|String|varchar(255)|할일 제목|O|
-|contents|String|varchar(255)|할일 내용|O|
+|contents|String|longtext|할일 내용|O|
 |createAt|LocalDateTime|-|작성일|O|
 |modifiedAt|LocalDateTime|-|수정일|O|
 
@@ -50,7 +50,7 @@ JPA 를 이용하여 일정 관리 앱을 개발한다.
 |id|Bigint|-|일정 번호|O|
 |username|String|varchar(20)|작성 유저명|O|
 |title|String|varchar(255)|할일 제목|O|
-|contents|String|varchar(255)|할일 내용|O|
+|contents|String|longtext|할일 내용|O|
 |createdAt|LocalDateTime|-|작성일|O|
 |modifiedAt|LocalDateTime|-|수정일O|
 
