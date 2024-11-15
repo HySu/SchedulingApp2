@@ -1,11 +1,11 @@
 # SchedulingApp2
-##개요
+## 개요
 JPA 를 이용하여 일정 관리 앱을 개발한다.
 
-##API 명세서 소개
+## API 명세서 소개
 일정 관리 앱에 대한 API 명세서를 작성하여 문서를 보고 프로그래밍 할 수 있게 한다.
 
-###API 명세서
+### API 명세서
 |기능|Method|URL|request|response|상태 코드|
 |---|---|---|---|---|---|
 |일정 등록|POST|/api/schedules|요청 body|등록 정보|200:OK|
