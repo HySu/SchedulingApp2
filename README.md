@@ -81,7 +81,7 @@ JPA 를 이용하여 일정 관리 앱을 개발한다.
 |이름|타입|최대글자수|설명|필수|
 |---|---|---|---|---|
 |username|String|varchar(20)|유저명|O|
-|title|String|varchar(255)|이메일|O|
+|email|String|varchar(255)|이메일|O|
 |createdAt|LocalDateTime|-|작성일|O|
 |modifiedAt|LocalDateTime|-|수정일|O|
 
